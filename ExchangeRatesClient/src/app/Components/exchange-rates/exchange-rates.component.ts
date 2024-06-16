@@ -24,13 +24,17 @@ export class ExchangeRatesComponent implements OnInit{
   constructor(private exchangeRatesService: ExchangeRatesService) { }
 
   ngOnInit(): void {
-   this.currencies = [
-      { name: 'USD', code: 'USD', icon: PrimeIcons.DOLLAR },
-      { name: 'EUR', code: 'EUR', icon: PrimeIcons.EURO },
-      { name: 'GBP', code: 'GBP', icon: PrimeIcons.POUND },
-      { name: 'CNY', code: 'CNY', icon: PrimeIcons.POUND },
-      { name: 'ILS', code: 'ILS', icon: '₪' }
-    ];
+    this.exchangeRatesService.getAllCurrencies().subscribe(
+      (data)=>{
+        console.log(data); 
+        this.currencies=data;    
+      },
+      (error)=>{
+          console.log(error);
+          
+      }
+    )
+  
     
 }
 fetchExchangeRates(currencyName: string): void {
