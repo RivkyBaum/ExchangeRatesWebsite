@@ -1,0 +1,26 @@
+<p-dropdown [options]="currencies" [(ngModel)]="selectedCurrency" optionLabel="name" placeholder="Select a Currency"
+    (onChange)="onCurrencySelect()">
+    <ng-template let-currency pTemplate="selectedItem">
+        <i [ngClass]="currency.icon"></i> {{currency.name}}
+    </ng-template>
+    <ng-template let-currency pTemplate="item">
+        <i [ngClass]="currency.icon" style="margin-right: 10px;"></i> {{currency.name}}
+    </ng-template>
+</p-dropdown>
+
+<p-table [value]="exchangeRates">
+    <ng-template pTemplate="header">
+        <tr>
+            <th>Base </th>
+            <th pSortableColumn="currency">Target  <p-sortIcon field="currency"></p-sortIcon></th>
+            <th pSortableColumn="rate">Exchange Rate <p-sortIcon field="rate"></p-sortIcon></th>
+          </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-rate>
+        <tr>
+          <td>{{ selectedCurrency?.name }}</td>
+          <td>{{ rate.currency }}</td>
+          <td>{{ rate.rate }}</td>
+        </tr>
+      </ng-template>
+</p-table>
