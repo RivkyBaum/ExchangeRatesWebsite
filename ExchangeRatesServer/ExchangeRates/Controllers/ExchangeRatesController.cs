@@ -29,7 +29,7 @@ namespace ExchangeRates.Controllers
         return StatusCode(500, $"Internal server error: {ex.Message}");
       }
     }
-        [HttpGet("AllCurrencies/")]
+        [HttpGet("AllCurrencies")]
         public async Task<List<Currency>> GetCurrencies()
         {
             return await _apiService.GetAllCurrencies();

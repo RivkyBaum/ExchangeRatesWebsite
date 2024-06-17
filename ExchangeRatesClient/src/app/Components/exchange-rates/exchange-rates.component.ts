@@ -18,7 +18,6 @@ export class ExchangeRatesComponent implements OnInit{
   code?: string;
   selectedCurrency?: Currency;
   exchangeRates: any[] = [];
-  currenciesList = ['USD', 'EUR', 'GBP', 'CNY', 'ILS'];
 
 
   constructor(private exchangeRatesService: ExchangeRatesService) { }
@@ -65,29 +64,13 @@ mapExchangeRates(data: any): any[] {
   }
   return filteredRates;
 }
-// mapExchangeRates(data: any, selectedCurrencyCode: string): any[] {
-//   const currencies = ['USD', 'EUR', 'GBP', 'CNY', 'ILS'];
-//   const mappedRates = [];
 
-//   // הוספת מטבע הבסיס לכל איבר במפה
-//   for (const currency of currencies) {
-//     if (currency !== selectedCurrencyCode) {
-//       mappedRates.push({
-//         baseCurrency: data.base_code,
-//         rates: {
-//           [currency]: data.conversion_rates[currency]
-//         }
-//       });
-//     }
-//   }
-
-//   return mappedRates;
-// }
 onCurrencySelect(): void {
   if(this.selectedCurrency){
     this.fetchExchangeRates(this.selectedCurrency.name);
 
   }
 }
+
 
 }
