@@ -14,9 +14,9 @@ I created a Dockerfile.
      ***git clone https://github.com/RivkyBaum/ExchangeRatesWebsite***  
      
 2.**Running the Angular Application:**          
-     a.Install the project dependencies by running- ***npm install*** 
-     b.Start the Angular development server- ***ng serve*** 
-     c.In the Angular project, open the environment.ts file 
+     a.Install the project dependencies by running- ***npm install***   
+     b.Start the Angular development server- ***ng serve***   
+     c.In the Angular project, open the environment.ts file   
      d.Update the apiUrl property to point to the URL of the running C# backend  
      
 3.**Running the C# Backend:**       
