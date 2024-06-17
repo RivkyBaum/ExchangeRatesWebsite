@@ -9,9 +9,6 @@ import { environment } from "src/environment";
   providedIn: 'root'
 })
 export class ExchangeRatesService {
-
-  // private apiUrl = 'https://localhost:7127/api/ExchangeRates';
-
   constructor(private http: HttpClient) { }
 
   getCurrencyExchangeRates(currencyName: string): Observable<any> {
