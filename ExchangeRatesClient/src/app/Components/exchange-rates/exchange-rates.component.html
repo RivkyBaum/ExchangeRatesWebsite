@@ -1,14 +1,11 @@
 <div class="container">
     <div class="top-quarter">
         <h4 class="blue-text">The table shows data of exchange rates updated in real time:</h4>
-
     </div>
     <div class="middle">
         <p-dropdown [options]="currencies" [(ngModel)]="selectedCurrency" optionLabel="name"
             placeholder="Select a Currency" (onChange)="onCurrencySelect()"> </p-dropdown>
-
         <div class="spacer"></div>
-
         <p-table [value]="exchangeRates" class="p-datatable custom-table">
             <ng-template pTemplate="header">
                 <tr>

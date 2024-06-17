@@ -54,7 +54,6 @@ fetchExchangeRates(currencyName: string): void {
 mapExchangeRates(data: any): any[] {
   const filteredRates = [];
   const excludedCurrency = this.selectedCurrency?.code;
-
   for (const [currency, rate] of Object.entries(data.conversion_rates)) {
     if (currency !== excludedCurrency && ['USD', 'EUR', 'GBP', 'CNY', 'ILS'].includes(currency)) {
       filteredRates.push({
