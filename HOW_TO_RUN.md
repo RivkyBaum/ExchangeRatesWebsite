@@ -5,8 +5,8 @@ The project is divided into two parts:
 2. **Frontend: Angular16**
 
 I used exchange rates API which provides real data.  
-And I used in ANGULAR a component library called PRIME NG  
-I created a Dockerfile.
+And I used in ANGULAR a component library called PRIME NG-for the design,  
+Additionally, I created a Dockerfile.
 
 ## Running the Project
 
