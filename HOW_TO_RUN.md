@@ -13,17 +13,17 @@ I created a Dockerfile.
 1.**Clone the repository:**   
      ***git clone https://github.com/RivkyBaum/ExchangeRatesWebsite***  
      
-2.**Running the Angular Application:**    
-     1.Install the project dependencies by running- ***npm install***   
-     2.Start the Angular development server- ***ng serve***   
-     3.In the Angular project, open the environment.ts file   
-     4.Update the apiUrl property to point to the URL of the running C# backend  
+## Running the Angular Application: 
+ 1.Install the project dependencies by running- ***npm install***   
+ 2.Start the Angular development server- ***ng serve***   
+ 3.In the Angular project, open the environment.ts file   
+ 4.Update the apiUrl property to point to the URL of the running C# backend  
      
-3.**Running the C# Backend:**       
-     1.Open a terminal and navigate to the C# project directory.  
-     2.Restore the project dependencies: ***dotnet restore***  
-     3.Build the project: ***dotnet build***  
-     4.Run the C# application: ***dotnet run***  
+## Running the C# Backend:      
+1.Open a terminal and navigate to the C# project directory.  
+2.Restore the project dependencies: ***dotnet restore***  
+3.Build the project: ***dotnet build***  
+4.Run the C# application: ***dotnet run***  
 
 
 
