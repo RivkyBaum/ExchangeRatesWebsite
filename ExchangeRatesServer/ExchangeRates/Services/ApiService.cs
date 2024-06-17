@@ -1,4 +1,4 @@
-namespace ExchangeRates.Classes
+namespace ExchangeRates.Services
 {
     using System;
     using System.Net.Http;
@@ -15,14 +15,14 @@ namespace ExchangeRates.Classes
             _httpClient = httpClient;
         }
         private static readonly List<Currency> _currencies = new List<Currency>
-    {
+        {
         new Currency { Code = "USD", Name = "USD" },
         new Currency { Code = "EUR", Name = "EUR" },
         new Currency { Code = "GBP", Name = "GBP" },
-        new Currency { Code = "CNY", Name = "CNY " },
+        new Currency { Code = "CNY", Name = "CNY" },
         new Currency { Code = "ILS", Name = "ILS" },
 
-    };
+        };
         public async Task<List<Currency>> GetAllCurrencies()
         {
             return _currencies;

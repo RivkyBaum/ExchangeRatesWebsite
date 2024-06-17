@@ -1,4 +1,4 @@
-using ExchangeRates.Classes;
+using ExchangeRates.Services;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -21,7 +21,6 @@ namespace ExchangeRates.Controllers
       try
       {
         string exchangeRates = await _apiService.GetExchangeRatesAsync(currencyCode);
-
         return Ok(exchangeRates);
       }
       catch (Exception ex)
@@ -29,6 +28,7 @@ namespace ExchangeRates.Controllers
         return StatusCode(500, $"Internal server error: {ex.Message}");
       }
     }
+
         [HttpGet("AllCurrencies")]
         public async Task<List<Currency>> GetCurrencies()
         {

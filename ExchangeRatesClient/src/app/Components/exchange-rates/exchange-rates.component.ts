@@ -13,11 +13,9 @@ interface Currency {
 })
 
 export class ExchangeRatesComponent implements OnInit{
- currencies?: any[];
+  currencies?: any[];
   selectedCurrency?: Currency;
   exchangeRates: any[] = [];
-
-
   constructor(private exchangeRatesService: ExchangeRatesService) { }
 
   ngOnInit(): void {
@@ -52,6 +50,7 @@ fetchExchangeRates(currencyName: string): void {
       }
     );
 }
+//Mapping only the 5 currencies to array
 mapExchangeRates(data: any): any[] {
   const filteredRates = [];
   const excludedCurrency = this.selectedCurrency?.code;
