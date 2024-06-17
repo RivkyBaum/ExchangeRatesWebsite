@@ -25,6 +25,9 @@ Additionally, I created a Dockerfile.
 3.Build the project: ***dotnet build***  
 4.Run the C# application: ***dotnet run***  
 
+##The screen looks like this:
+![image](https://github.com/RivkyBaum/ExchangeRatesWebsite/assets/133572152/c5631064-548e-47fc-a240-f1d46dfa3fce)
+
 
 
 
