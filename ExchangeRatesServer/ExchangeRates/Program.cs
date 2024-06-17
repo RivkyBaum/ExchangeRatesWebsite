@@ -1,4 +1,4 @@
-using ExchangeRates.Classes;
+using ExchangeRates.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
