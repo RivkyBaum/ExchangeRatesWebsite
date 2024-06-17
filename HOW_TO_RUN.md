@@ -4,8 +4,8 @@ The project is divided into two parts:
 1. **Backend: C# ASP.NET8 core**
 2. **Frontend: Angular16**
 
-I used exchange rates API which provides real data.
-And I used in ANGULAR a component library called PRIME NG
+I used exchange rates API which provides real data.  
+And I used in ANGULAR a component library called PRIME NG  
 I created a Dockerfile.
 
 ## Running the Project
