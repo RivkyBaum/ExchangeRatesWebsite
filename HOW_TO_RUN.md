@@ -10,7 +10,7 @@ I created a Dockerfile.
 
 ## Running the Project
 
-1.**Clone the repository:**   
+**Clone the repository:**   
      ***git clone https://github.com/RivkyBaum/ExchangeRatesWebsite***  
      
 ## Running the Angular Application: 
