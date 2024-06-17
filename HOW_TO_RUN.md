@@ -4,7 +4,7 @@ The project is divided into two parts:
 1. **Backend: C# ASP.NET8 core**
 2. **Frontend: Angular16**
 
-I used exchange rates API which provides real dataת
+I used exchange rates API which provides real data.
 And I used in ANGULAR a component library called PRIME NG
 I created a Dockerfile.
 
@@ -12,7 +12,7 @@ I created a Dockerfile.
 
 1.**Clone the repository:** 
   ***git clone https://github.com/RivkyBaum/ExchangeRatesWebsite***
-2.**Running the Angular Application:**
+2.Running the Angular Application:
   **a.Install the project dependencies by running- ***npm install*****
   **b.Start the Angular development server- ***ng serve*****
   **c.In the Angular project, open the environment.ts file**
