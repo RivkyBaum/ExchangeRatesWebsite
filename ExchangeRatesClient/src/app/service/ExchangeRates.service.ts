@@ -16,6 +16,6 @@ export class ExchangeRatesService {
     return this.http.get<any>(`${this.apiUrl}/exchangeRates/${currencyName}`); 
   }
   getAllCurrencies(): Observable<Currency[]> {
-    return this.http.get<any>(`${this.apiUrl}/AllCurrencies/`);
+    return this.http.get<any>(`${this.apiUrl}/AllCurrencies`);
   }
 }

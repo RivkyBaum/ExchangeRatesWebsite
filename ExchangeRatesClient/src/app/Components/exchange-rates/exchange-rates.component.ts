@@ -14,8 +14,6 @@ interface Currency {
 
 export class ExchangeRatesComponent implements OnInit{
  currencies?: any[];
-  name?: string;
-  code?: string;
   selectedCurrency?: Currency;
   exchangeRates: any[] = [];
 
@@ -32,9 +30,13 @@ export class ExchangeRatesComponent implements OnInit{
           console.log(error);
           
       }
-    )
-  
-    
+    )    
+}
+onCurrencySelect(): void {
+  if(this.selectedCurrency){
+    this.fetchExchangeRates(this.selectedCurrency.name);
+
+  }
 }
 fetchExchangeRates(currencyName: string): void {
   this.exchangeRatesService.getCurrencyExchangeRates(currencyName)
@@ -64,13 +66,5 @@ mapExchangeRates(data: any): any[] {
   }
   return filteredRates;
 }
-
-onCurrencySelect(): void {
-  if(this.selectedCurrency){
-    this.fetchExchangeRates(this.selectedCurrency.name);
-
-  }
-}
-
 
 }
